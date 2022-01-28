@@ -37,7 +37,7 @@
 ## 2 - Usando o frameworke laravel crie seeders para o preenchimentos das tabelas criadas anteriormente.
 
 
-## 3 - Usando o laravel crie duas views que emitem uma loja virtual, todos CSS deve ser criados usando os pré compiladores less ou sass
+## 3 - Usando o laravel crie duas views que imitem uma loja virtual, todos CSS deve ser criados usando os pré compiladores less ou sass
 
         1 º - home:
             categorias e subcategorias
