@@ -5,6 +5,7 @@ FROM mcr.microsoft.com/vscode/devcontainers/php:0-${VARIANT}
 # Install MariaDB client
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get install -y mariadb-client \ 
+    && docker-php-ext-install mysqli pdo pdo_mysql \
     && apt-get clean -y && rm -rf /var/lib/apt/lists/* &&  rm -rf /tmp/library-scripts
 
 # Update args in docker-compose.yaml to set the UID/GID of the "vscode" user.

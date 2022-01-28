@@ -15,7 +15,7 @@ class CreateProdutoImagem extends Migration
     {
         Schema::create('produto_imagem', function (Blueprint $table) {
             $table->id();
-            $table->integer('produto_id');
+            $table->unsignedBigInteger('produto_id');
             $table->string('caminho_imagem');
             $table->timestamps();
         });

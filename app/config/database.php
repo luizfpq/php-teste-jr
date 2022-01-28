@@ -46,9 +46,9 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', '10.4.59.253'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'php-teste-db'),
+            'database' => env('DB_DATABASE', 'php_teste_db'),
             'username' => env('DB_USERNAME', 'root'),
             'password' => env('DB_PASSWORD', 'abracadabra'),
             'unix_socket' => env('DB_SOCKET', ''),
@@ -81,7 +81,7 @@ return [
         'sqlsrv' => [
             'driver' => 'sqlsrv',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', 'localhost'),
+            'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '1433'),
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),

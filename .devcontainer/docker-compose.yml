@@ -29,7 +29,7 @@ services:
     command: sleep infinity
 
   mariadb:
-      image: mariadb:10.4
+      image: maria-db:10.4
       expose:
           # Expose mariadb port to php service (Access as hostname "mariadb" from within php container)
           - "3306"
@@ -40,5 +40,7 @@ services:
       environment:
           MYSQL_ROOT_PASSWORD: abracadabra
           MYSQL_DATABASE: php-teste-db
+          MYSQL_USER: php-teste-user
+          MYSQL_PASSWORD: abracadabra
           
 

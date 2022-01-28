@@ -15,14 +15,15 @@ class CreateProdutoDescricao extends Migration
     {
         Schema::create('produto_descricao', function (Blueprint $table) {
             $table->id();
-            $table->integer('produto_id');
+            $table->unsignedBigInteger('produto_id');
             $table->string('descricao');
             $table->timestamps();
         });
 
-        Schemma::table('produto_descricao', function (Blueprint $table) {
+        Schema::table('produto_descricao', function (Blueprint $table) {
             $table->foreign('produto_id')->references('id')->on('produto');
         });
+
     }
 
     /**
