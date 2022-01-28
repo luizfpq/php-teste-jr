@@ -23,6 +23,7 @@ services:
     ports:
       # For use with PHP (e.g. `php -S localhost:8080`)
       - "8080:8080"
+      - "9000:9000"
 
     # Overrides default command so things don't shut down after the process ends.
     command: sleep infinity
@@ -39,4 +40,5 @@ services:
       environment:
           MYSQL_ROOT_PASSWORD: abracadabra
           MYSQL_DATABASE: php-teste-db
+          
 
